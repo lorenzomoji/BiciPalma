@@ -2,6 +2,8 @@
 package org.lasencinas.bicipalma;
 
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import org.lasencinas.bicipalma.Bicicleta;
 
 public class Estacion {
@@ -50,6 +52,18 @@ public class Estacion {
         return anclajesLibres;
     }
     
+    public int generarAnclaje() {
+        Integer numeroEntero = ThreadLocalRandom.current().nextInt(0, this.anclajes.size());
+        return numeroEntero;
+    }
     
+    public void anclarBicicleta(Bicicleta bicicleta) {
+        anclajes.add(bicicleta);
+        mostrarAnclaje(bicicleta,  numeroAnclajes);
+    }
+    
+    public void mostrarAnclaje(Bicicleta bicicleta, int numeroAnclajes) {
+        System.out.println("Bicicleta: "+ bicicleta.getId()+"anclada en el anclaje:"+ numeroAnclajes);
+    }
             
 }
