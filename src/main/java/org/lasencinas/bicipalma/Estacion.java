@@ -38,4 +38,18 @@ public class Estacion {
         System.out.println("Direccion: "+ this.direccion);
         System.out.println("Numero de anclajes: "+ this.numeroAnclajes);
     }
+    
+    public int anclajesLibres() {
+        int anclajesLibres = 0;
+        
+        for (int i = 0; i < anclajes.size(); i++) {
+            if (anclajes.get(i) == null) {
+                anclajesLibres++;
+            }
+        }
+        return anclajesLibres;
+    }
+    
+    
+            
 }
