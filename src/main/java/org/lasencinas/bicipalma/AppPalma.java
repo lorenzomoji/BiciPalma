@@ -1,10 +1,10 @@
 package org.lasencinas.bicipalma;
 
-import bicicleta.Bicicleta;
-import estacion.Estacion;
-import tarjetaUsuario.TarjetaUsuario;
+import org.lasencinas.bicipalma.Bicicleta;
+import org.lasencinas.bicipalma.Estacion;
+import org.lasencinas.bicipalma.TarjetaUsuario;
 
-public class BiciPalma {
+public class AppPalma {
 
 	public static void main(String[] args) {
 		
@@ -20,13 +20,13 @@ public class BiciPalma {
 				
 		/* caso TEST visualizar anclajes libres */
 		
-		System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
+/*		System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
 		
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
 		/* caso TEST anclar bicicleta(s) */
 
-		System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
+/*		System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
 		
 		int[] bicicletas = {291, 292, 293, 294};
 		
@@ -36,7 +36,7 @@ public class BiciPalma {
 		}
 		*/
 		
-		for ( int id: bicicletas ){
+/*		for ( int id: bicicletas ){
 			Bicicleta bicicleta = new Bicicleta(id);
 			estacion.anclarBicicleta(bicicleta);
 		}
@@ -45,13 +45,13 @@ public class BiciPalma {
 		
 		/* caso TEST consultar bicicletas ancladas */
 		
-		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+/*		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 		
 		estacion.consultarAnclajes();
 		
 		/* caso TEST retirar bicicleta */
 		
-		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
+/*		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 		
 		TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
 		
@@ -62,5 +62,5 @@ public class BiciPalma {
 		estacion.consultarAnclajes();
 		
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
-	}
+*/	}
 }
