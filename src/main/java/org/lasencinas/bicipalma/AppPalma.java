@@ -31,11 +31,11 @@ public class AppPalma {
 		int[] bicicletas = {291, 292, 293, 294};
 		
 		 // generar anclaje random 
-	/*	for (int i: bicicletas){
+		for (int i: bicicletas){
 			System.out.println( estacion.generarAnclaje());
 		}
 		
-	*/	
+		
 		for ( int id: bicicletas ){
 			Bicicleta bicicleta = new Bicicleta(id);
 			estacion.anclarBicicleta(bicicleta);

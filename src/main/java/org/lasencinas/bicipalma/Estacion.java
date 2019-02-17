@@ -53,7 +53,7 @@ public class Estacion {
     }
     
     public int generarAnclaje() {
-        Integer numeroEntero = ThreadLocalRandom.current().nextInt(0, this.anclajes.size());
+        Integer numeroEntero = ThreadLocalRandom.current().nextInt(0, this.numeroAnclajes);
         return numeroEntero;
     }
     
