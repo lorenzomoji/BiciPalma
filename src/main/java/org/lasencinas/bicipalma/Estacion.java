@@ -65,5 +65,56 @@ public class Estacion {
     public void mostrarAnclaje(Bicicleta bicicleta, int numeroAnclajes) {
         System.out.println("Bicicleta: "+ bicicleta.getId()+"anclada en el anclaje:"+ numeroAnclajes);
     }
+    
+    public void consultarAnclajes(Bicicleta bicicleta) {
+        boolean hayBici = false;
+        for (int i = 0;i < anclajes.size();i++) {
+            if (anclajes.get(i) != null) {
+                System.out.println("El anclaje "+ i +"está ocupado por la bicicleta"+ bicicleta.getId());
+            }
+            else {
+                System.out.println("El anclaje "+ i +"está libre");
+            }
+        }
+    }
+
+    void consultarAnclajes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public boolean leerTarjetaUsuario(TarjetaUsuario tarjetaUsuario) {
+        return tarjetaUsuario.getActivada();
+    }
+    
+    public void retirarBicicleta(TarjetaUsuario tarjetaUsuario) {
+        
+        if (leerTarjetaUsuario(tarjetaUsuario) == true) {
+            
+            boolean biciRetirada = false;
+            
+            while(biciRetirada == true) {
+                int posicion = generarAnclaje();
+                int numeroAnclaje = posicion + 1;
+                
+                if (anclajes.get(posicion) != null) {
+                    mostrarBicicleta(anclajes.get(posicion), numeroAnclaje);
+                    biciRetirada = true;
+                }
+                
+                else {
+                    
+                }
+            }
+        }
+        
+        else {
+            System.out.println("Tarjeta de usuario inactiva: ");
+        }
+    }
+    
+    public void mostrarBicicleta(Bicicleta bicicleta, int numeroAnclaje) {
+        System.out.println("bicicleta retirada: "+ bicicleta.getId()+ "del anclaje: " + numeroAnclaje);
+    }
+            
             
 }

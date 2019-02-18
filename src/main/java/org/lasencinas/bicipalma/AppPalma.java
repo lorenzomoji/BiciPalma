@@ -45,13 +45,13 @@ public class AppPalma {
 		
 		/* caso TEST consultar bicicletas ancladas */
 		
-/*		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 		
 		estacion.consultarAnclajes();
 		
 		/* caso TEST retirar bicicleta */
 		
-/*		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
+		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 		
 		TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
 		
@@ -62,5 +62,5 @@ public class AppPalma {
 		estacion.consultarAnclajes();
 		
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
-*/	}
+	}
 }
